@@ -1,0 +1,318 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    max-width: 100%;
+    text-align: center;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+/* Header Section */
+.container {
+    display: flex;
+    margin: auto 0 auto auto;
+    gap: 20px;
+    padding: 0;
+}
+
+.header-list {
+    display: flex;
+    padding: 15px 30px;
+    margin: auto 0 auto auto;
+    gap: 20px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.header-list a {
+    text-decoration: none;
+    color: #355D61;
+}
+
+h1, h2, h3 {
+    padding: 0;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 40px;
+    color: #355D61;
+    padding-top: 10px;
+}
+
+h2 {
+    font-size: 30px;
+    color: #213F4B;
+}
+
+h3 {
+    font-size: 25px;
+    color: #213F4B;
+    margin-top: 0;
+}
+
+h1 span {
+    font-size: 65px;
+    display: block;
+    color: #CD3483;
+    font-weight: 800;
+}
+
+header img {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+}
+
+.photo-list img {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Hero Section */
+#hero-block {
+    background-color: #C6D6D4;
+    padding: 5px 0 35px 0;
+    margin: 0 auto;
+}
+
+.shop-btn {
+    cursor: pointer;
+    background-color: #1C949D;
+    color: whitesmoke;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.shop-btn:hover,
+.shop-btn:focus {
+    background-color: #213F4B;
+}
+
+section {
+    padding: 25px 0 0 0;
+    margin-bottom: 0;
+}
+
+/* Main Content */
+
+#photo-block {
+    background-color: #5EC5D1;
+}
+
+.photo-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 5px 0;
+    margin: 0;
+}
+
+.product {
+    box-sizing: border-box;
+    width: calc(50% - 10px);
+    margin: auto;
+}
+
+.product-text:hover,
+.product-text:focus {
+    color: #57143A;
+    font-size: 30px;
+}
+
+.product-text {
+    font-size: 20px;
+    font-weight: 500;
+    color: #213F4B;
+    cursor: pointer;
+}
+
+/* About Us Section */
+#about-block {
+    padding: 25px 30px;
+    color: #213F4B;
+}
+
+/* Contact Us section */
+#contact-block {
+    background-color: #C6D6D4;
+    padding: 25px 30px;
+    margin: 0;
+}
+
+#contact-block p a {
+    color: #CD3483;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+form {
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    background-image: linear-gradient(#5ec5d1, #26B3BE, #1C949D);
+    border-radius: 8px;
+    box-shadow: 0 0 10px #00000019;
+}
+
+form label {
+    display: block;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    font-size: 16px;
+    margin-top: 5px;
+    padding: 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.submit-btn {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #CD3483;
+    color: whitesmoke;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+
+/* Footer section */
+
+footer p {
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    color: #213F4B;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.developer {
+    margin-left: auto;
+    color: #213F4B;
+    font-weight: 600;
+}
+
+.footer-box, .social-list {
+    background-image: linear-gradient(#5ec5d1, #26B3BE, #1C949D);
+    margin: 0 0 0 auto;
+    padding: 0 10px;
+    display: flex;
+    list-style-type: none;
+    gap: 25px;
+    font-size: 20px;
+}
+
+.social-icon{
+    width: 30px;
+    height: 30px;
+    list-style: none;
+    cursor: pointer;
+    padding: 15px 0;
+}
+
+/* ---------- Tablets (768px to 1024px) ---------- */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .header-list {
+        gap: 15px;
+        font-size: 18px;
+    }
+
+    .product {
+        width: 100%;
+    }
+
+    .photo-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-box {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* ---------- Phones (less than 768px) ---------- */
+@media (max-width: 767px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    h1 span {
+        font-size: 40px;
+    }
+
+    .container,
+    .header-list {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        gap: 10px;
+    }
+
+    header img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .shop-btn {
+        width: 100%;
+    }
+
+    .product {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .photo-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    .footer-box,
+    .social-list {
+        margin: auto;
+        align-items: center;
+        font-size: 18px;
+    }
+
+    footer p {
+        margin: auto;
+        text-align: center;
+        padding: 10px;
+    }
+}

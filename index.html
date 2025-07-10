@@ -1,44 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="utf-8">
-        <title>Asemrowend Page</title>
-    </head>
-    <body>
-        <nav>
-            <img src="" alt="Header Logo" />
-            <nav-item>Sign up</nav-item>
-            <nav-item>Featured Products</nav-item>
-            <nav-item>Contact Us</nav-item>
-        </nav>
 
-        <div id="sign-up-block">
-            <div id="block-1">
-                <h1>Asemrowend News</h1>
-                <button>Sign up</button>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Asemrowend</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="/img/logo.jpg" alt="Header Logo" />
+            <ul class="header-list">
+                <li><a href="#our-products">Our Products</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section id="hero-block">
+            <h1>Welcome to <span>Asemrowend</span></h1>
+            <p class="spacing">Your one-stop shop for trendy scrunchies and accessories.</p>
+            <a class="shop-btn" href="https://webstore.ikhokha.com/asemrowend">Shop Now</a>
+        </section>
+
+        <section id="photo-block">
+            <h2 id="our-products">Our Products</h2>
+            <div class="photo-list">
+                <div class="product">
+                    <img src="/img/products/pink-scrunchie.jpg" alt="photo of a pink scrunchie" />
+                    <p><span class="product-text">Scrunchies</span></p>
+                </div>
+                <div class="product">
+                    <img src="/img/products/bunnyears.jpg" alt="photo of bunny ears" />
+                    <p><span class="product-text">Bunny Ears</span></p>
+                </div>
+                <div class="product">
+                    <img src="/img/products/lint.jpg" alt="photo of Asemrowend Linte" />
+                    <p><span class="product-text">Asemrowend Linte</span></p>
+                </div>
+                <div class="product">
+                    <img src="/img/products/bowtail.jpg" alt="photo of bow-tail" />
+                    <p><span class="product-text">Bow-Tails</span></p>
+                </div>
+                <div class="product">
+                    <img src="/img/products/hairclips.jpg" alt="photo of hair-clips" />
+                    <p><span class="product-text">Hair-Clips</span></p>
+                </div>
             </div>
-            <div id="block-2"><img src="" alt="Photo of Scrunchies" /></div>
-        </div>
+        </section>
 
-        <div id="photo-block">
-            <h3>Featured Products</h3>
-            <img src="" alt="photo 1" />
-            <img src="" alt="photo 1" />
-            <img src="" alt="photo 1" />
-            <img src="" alt="photo 1" />
-            <img src="" alt="photo 1" />
-        </div>
+        <section id="about-block">
+            <h3 id="about-us">About Us</h3>
+            <p>At Asemrowend, we believe in providing high-quality, stylish accessories that make you feel confident and
+                beautiful.
+                Our scrunchies are designed by hand, with care and attention to detail,
+                ensuring that you get the best products every time.
+            </p>
+        </section>
 
-        <div id="quote-block">
-            <p>Quote of the day</p>
-        </div>
+        <section id="contact-block">
+            <h3 id="contact-us">Contact Us</h3>
+            <p>If you have any questions or need assistance, feel free to reach out to us at <a
+                    href="mailto:asemrowend@outlook.com">asemrowend@outlook.com</a></p>
+            <form name="contact" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact">
+                <label for="name">Full name:</label>
+                <input type="text" id="name" name="name" placeholder="John doe" required />
 
-        <div>
-            <h5>Call to action</h5>
-            <p>Describe</p>
-            <button>Sign up</button>
-        </div>
-    </body>
-    <footer>Copyright</footer>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="your-mail@example.com" required />
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="How can we help you?" required></textarea>
+
+                <button class="submit-btn" type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="footer-box">
+        <p>© 2023 Asemrowend. All rights reserved.</p>
+        <p class="developer">Made with ❤️ by Hannes Jansen van Rensburg</p>
+        <ul class="social-list">
+            <li>
+                <a href="https://www.facebook.com/share/1G1fFmCAge/">
+                    <img class="social-icon" src="/img/facebook.png" alt="Facebook" />
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/asemrowend_scrunchie?igsh=MXVkeG12NjRxdHFydg==">
+                    <img class="social-icon" src="/img/instagram.png" alt="Instagram" />
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/@asemrowendscrunchies?_t=ZM-8xuvxhq17Oq&_r=1">
+                    <img class="social-icon" src="/img/tiktok.png" alt="TikTok" />
+                </a>
+            </li>
+            <li>
+                <a href="https://youtube.com/@asemrowendscrunchies?si=2ZIggaVlryRR2W1I">
+                    <img class="social-icon" src="/img/youtube-box.png" alt="YouTube" />
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
 </html>
