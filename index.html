@@ -4,7 +4,8 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <script defer src="https://cloud.umami.is/script.js" data-website-id="159107aa-4225-4de6-8c26-c09d8e6b264f"></script>
+    <script defer src="https://cloud.umami.is/script.js"
+        data-website-id="159107aa-4225-4de6-8c26-c09d8e6b264f"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
@@ -76,18 +77,21 @@
             <h3 id="contact-us">Contact Us</h3>
             <p>If you have any questions or need assistance, feel free to reach out to us at <a
                     href="mailto:asemrowend@outlook.com">asemrowend@outlook.com</a></p>
-            <form name="contact" method="POST" data-netlify="true">
-                <input type="hidden" name="form-name" value="contact">
-                <label for="name">Full name:</label>
-                <input type="text" id="name" name="name" placeholder="John doe" required />
+            <form name="contact" method="POST" id="contact" data-netlify="true">
+                <div class="form-container">
+                    <input type="hidden" name="form-name" value="contact">
+                    <label for="name">Full name:</label>
+                    <input type="text" id="name" name="name" placeholder="John doe" required />
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="your-mail@example.com" required />
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="your-mail@example.com" required />
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" placeholder="How can we help you?" required></textarea>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="How can we help you?"
+                        required></textarea>
 
-                <button class="submit-btn" type="submit">Send Message</button>
+                    <button class="submit-btn" type="submit">Send Message</button>
+                </div>
             </form>
         </section>
 
