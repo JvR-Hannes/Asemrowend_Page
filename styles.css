@@ -40,9 +40,10 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 40px;
-    color: #355D61;
+    font-size: 42px;
+    color: #e8e2d6;
     padding-top: 10px;
+    text-shadow: 0 1px 1px black;
 }
 
 h2 {
@@ -61,6 +62,7 @@ h1 span {
     display: block;
     color: #CD3483;
     font-weight: 800;
+    text-shadow: 0 1px 1px black;
 }
 
 header img {
@@ -78,9 +80,14 @@ header img {
 
 /* Hero Section */
 #hero-block {
-    background-color: #C6D6D4;
-    padding: 5px 0 35px 0;
+    background-image: url("./img/converted.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; /* Centers the image */
+    background-color: #000; /* Optional: fallback background color */
+    padding: 10px 0 10px 0;
     margin: 0 auto;
+    height: 100vh;
 }
 
 .shop-btn {
@@ -91,9 +98,11 @@ header img {
     padding: 10px 10px;
     border-radius: 10px;
     font-weight: 500;
+    text-shadow: 0 1px 1px black;
     font-size: 16px;
     text-decoration: none;
     transition: background-color 0.5s;
+    box-shadow: 1px 1px 2px black;
 }
 
 .shop-btn:hover,
@@ -106,10 +115,18 @@ section {
     margin-bottom: 0;
 }
 
+#hero-block .spacing{
+    padding-bottom: 15px;
+    color: #000000;
+    font-weight: 400;
+    font-size: 30px;
+    text-shadow: 1px 1px 1px black;
+}
+
 /* Main Content */
 
 #photo-block {
-    background-color: #F6F3F2;
+    background-color: #f0e7da;
 }
 
 .photo-list {
@@ -167,7 +184,7 @@ section {
 form {
     padding: 20px;
     max-width: 500px;
-    background-color: #355D61;
+    background-color: #4a67;
     margin: 0 auto;
     border-radius: 8px;
     box-shadow: 0 0 11px #00000019;
@@ -175,7 +192,7 @@ form {
 
 form label {
     display: block;
-    color: #C6D6D4;
+    color: #001200;
     margin-top: 5px;
     font-weight: 600;
 }
@@ -330,4 +347,11 @@ footer p {
         text-align: center;
         padding: 10px;
     }
+
+    @media (max-width: 600px) {
+    #hero-block {
+        padding: 20px 10px;
+        background-position: top;
+    }
+}
 }
