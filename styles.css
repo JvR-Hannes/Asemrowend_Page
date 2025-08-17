@@ -29,9 +29,14 @@ ul li {
     font-weight: 500;
 }
 
-.header-list a {
+.header-list a,
+a {
     text-decoration: none;
     color: #355D61;
+}
+
+a {
+    color: #CD3483;
 }
 
 h1, h2, h3 {
@@ -135,6 +140,11 @@ section {
     gap: 20px;
     padding: 5px 0;
     margin: 0;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    padding: 10px;
+    margin: 0 auto; */
 }
 
 .product {
@@ -265,7 +275,7 @@ footer p {
 }
 
 /* ---------- Tablets (768px to 1024px) ---------- */
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
     h1 {
         font-size: 32px;
     }
@@ -295,7 +305,7 @@ footer p {
 }
 
 /* ---------- Phones (less than 768px) ---------- */
-@media (max-width: 767px) {
+@media (min-width: 767px) {
     h1 {
         font-size: 28px;
     }
