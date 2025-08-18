@@ -275,7 +275,7 @@ footer p {
 }
 
 /* ---------- Tablets (768px to 1024px) ---------- */
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
     h1 {
         font-size: 32px;
     }
@@ -305,7 +305,7 @@ footer p {
 }
 
 /* ---------- Phones (less than 768px) ---------- */
-@media (min-width: 767px) {
+@media (max-width: 767px) {
     h1 {
         font-size: 28px;
     }
